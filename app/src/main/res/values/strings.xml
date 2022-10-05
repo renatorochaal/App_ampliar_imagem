@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Star Wars</string>
+    <string name="pricipal">Pricipal</string>
+    <string name="imagemkyle">ImagemKyle</string>
+    <string name="imagemr2d2">ImagemR2D2</string>
+    <string name="imagemstormtroop">ImagemStormTroop</string>
+    <string name="imagemvader">ImagemVader</string>
+</resources>

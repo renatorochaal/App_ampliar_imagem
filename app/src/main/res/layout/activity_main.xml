@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imagePricipal"
+        android:layout_width="265dp"
+        android:layout_height="265dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/pricipal"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageR2D2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        android:contentDescription="@string/imagemr2d2"
+        android:onClick="alteraFigura2"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/imageVader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageKyle"
+        app:layout_constraintTop_toBottomOf="@+id/imagePricipal"
+        app:srcCompat="@drawable/r2d2" />
+
+    <ImageView
+        android:id="@+id/imageKyle"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp"
+        android:contentDescription="@string/imagemkyle"
+        android:onClick="alteraFigura"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/imageStorm"
+        app:layout_constraintEnd_toStartOf="@+id/imageR2D2"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagePricipal"
+        app:srcCompat="@drawable/kylo" />
+
+    <ImageView
+        android:id="@+id/imageStorm"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="@string/imagemstormtroop"
+        android:onClick="alteraFigura3"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageVader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageKyle"
+        app:srcCompat="@drawable/stormtrooper" />
+
+    <ImageView
+        android:id="@+id/imageVader"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="@string/imagemvader"
+        android:onClick="alteraFigura4"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.392"
+        app:layout_constraintStart_toEndOf="@+id/imageStorm"
+        app:layout_constraintTop_toBottomOf="@+id/imageR2D2"
+        app:srcCompat="@drawable/vader" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
